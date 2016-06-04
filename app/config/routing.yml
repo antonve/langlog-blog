@@ -1,0 +1,10 @@
+root:
+  path: /
+  defaults:
+    _controller: FrameworkBundle:Redirect:urlRedirect
+    path: /blog
+
+kore_blog:
+    resource: "@KoreBlogBundle/Controller/"
+    type:     annotation
+    prefix:   /blog

@@ -1,0 +1,18 @@
+{% extends '::base.html.twig' %}
+
+{% block content %}
+<ul id="blog_post_list">
+    {% for post in posts %}
+    <li>
+        <h3 class="blog_title"><a href="{{ path('blog_post_view', {'slug': post.slug, 'id': post.id}) }}">{{ post.title }}</a> <span>{{ post.created|date("F d, Y") }}</span></h3>
+        <p>
+            {{ post.excerpt }}
+        </p>
+    </li>
+    {% endfor %}
+</ul>
+
+<p>
+    <em><a href="{{ path('blog_all') }}">Older posts &raquo;</a></em>
+</p>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends '::base.html.twig' %}
+
+{% block content %}
+<h2>All posts</h2>
+<ul id="blog_post_list">
+    {% for post in posts %}
+    <li>
+        <h3 class="blog_title"><a href="{{ path('blog_post_view', {'slug': post.slug, 'id': post.id}) }}">{{ post.title }}</a> <span>{{ post.created|date("F d, Y") }}</span></h3>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

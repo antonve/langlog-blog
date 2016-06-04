@@ -1,0 +1,59 @@
+body
+{
+    background-color: #fff;
+    font-family: "proxima-nova",sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: "ff-tisa-web-pro",serif;
+}
+
+p, ol, ul
+{
+    font-size: 1.3em;
+}
+
+#blog_post_list
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li
+    {
+
+        p
+        {
+            font-size: 1em;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.blog_title
+{
+    a
+    {
+        text-decoration: underline;
+    }
+
+    span
+    {
+        margin-left: 10px;
+        font-family: "proxima-nova",sans-serif;
+        color: #888;
+        font-size: .6em;
+        font-style: italic;
+    }
+}
+
+.page-footer
+{
+    margin-bottom: 20px;
+}
+
+.right
+{
+    float: right;
+}

@@ -1,0 +1,12 @@
+{% extends '::base.html.twig' %}
+
+{% block content %}
+<h2 class="blog_title">{{ post.title }} <span>{{ post.created|date("F d, Y") }}</span></h2>
+
+{{ post.content|markdown }}
+
+{% if post.comments %}
+<h3>Comments</h3>
+{{ knp_disqus_render('langlog', {'identifier': path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) }) }}
+{% endif %}
+{% endblock %}
