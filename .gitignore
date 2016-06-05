@@ -11,3 +11,5 @@
 /composer.phar
 .idea/
 .idea/workspace.xml
+/web/css/*
+/web/js/*
